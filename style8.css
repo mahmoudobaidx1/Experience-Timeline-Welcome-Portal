@@ -1,0 +1,70 @@
+:root{
+    --main_color---:#9d8ad8
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.h1_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+h1{
+    font-weight: bolder;
+    color:white;
+    
+}
+.container{
+    width: calc(100% - 20px);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+  
+    
+}
+button:hover{
+    background-color: var(--main_color---);
+    cursor: pointer;
+
+}
+button{
+   background-color: grey;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
+  border: none; 
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  border: none;
+
+}
+button p{
+     color: white;
+  font-size: xx-large;
+  font-weight: bold;
+}
+button span{
+    color: white;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+@media (min-width:768px) {
+    .h1_container{
+        align-items: start;
+        flex-direction: row;
+    }
+  .container {
+     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }}
